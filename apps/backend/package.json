@@ -1,0 +1,28 @@
+{
+  "name": "@acme/backend",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc --project tsconfig.json",
+    "dev": "tsx watch src/index.ts",
+    "start": "node dist/index.js",
+    "lint": "eslint \"src/**/*.ts\" \"test/**/*.ts\"",
+    "test": "jest",
+    "test:watch": "jest --watch"
+  },
+  "dependencies": {
+    "@acme/utils": "workspace:*",
+    "dotenv-flow": "^3.3.0"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.5.12",
+    "@types/node": "workspace:^",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.2.3",
+    "tsx": "workspace:^",
+    "typescript": "workspace:^"
+  }
+}

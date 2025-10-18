@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+    "target": "ES2021",
+    "lib": ["ES2021", "DOM"],
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    "moduleDetection": "force",
+    "strict": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true,
+    "resolveJsonModule": true,
+    "allowSyntheticDefaultImports": true,
+    "jsx": "react-jsx",
+    "baseUrl": ".",
+    "paths": {
+      "@acme/ui": ["packages/ui/src/index.ts"],
+      "@acme/ui/*": ["packages/ui/src/*"],
+      "@acme/utils": ["packages/utils/src/index.ts"],
+      "@acme/utils/*": ["packages/utils/src/*"]
+    }
+  },
+  "exclude": ["node_modules", "dist", "build"]
+}

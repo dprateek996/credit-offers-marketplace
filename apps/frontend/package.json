@@ -1,0 +1,37 @@
+{
+  "name": "@acme/frontend",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "vite build",
+    "dev": "vite",
+    "preview": "vite preview",
+    "lint": "eslint \"src/**/*.{ts,tsx}\" \"tests/**/*.{ts,tsx}\"",
+    "test": "vitest run",
+    "test:unit": "vitest",
+    "test:e2e": "playwright test"
+  },
+  "dependencies": {
+    "@acme/ui": "workspace:*",
+    "@acme/utils": "workspace:*",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@playwright/test": "workspace:^",
+    "@testing-library/jest-dom": "^6.4.2",
+    "@testing-library/react": "^14.3.1",
+    "@testing-library/user-event": "^14.5.2",
+    "@types/react": "^18.2.37",
+    "@types/react-dom": "^18.2.15",
+    "@vitejs/plugin-react": "^4.3.0",
+    "dotenv-flow": "^3.3.0",
+    "eslint": "workspace:^",
+    "eslint-plugin-react": "workspace:^",
+    "jsdom": "^24.0.0",
+    "typescript": "workspace:^",
+    "vite": "^5.2.8",
+    "vitest": "workspace:^"
+  }
+}
